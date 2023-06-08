@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.cabecalho-img {
+    overflow: hidden;
+    /* border: red solid; */
+}
+
+.box-sae {
+    display: flex;
+    margin-top: 18px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: red solid; */
+}
+
+.bloco-descricao {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 72px;
+    /* border: red solid; */
+}
+
+.logo {
+    margin-bottom: 10px;
+    /* border: red solid; */
+}
+
+.texto-servico {
+    color: #579DA1;
+    margin-bottom: 0;
+    /* border: red solid; */
+}
+
+.texto-registo {
+    margin-top: 20px;
+    color: #686770;
+    /* border: red 1px solid; */
+    margin-bottom: 24px;
+}
+
+
+.preenchimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #006A70;
+    padding: 25px;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+
+.titulo-registro {
+    color: #ffffff;
+    padding: 30px;
+}
+
+#inputBox {
+    position: relative;
+    width: 600px;
+    /* border: red solid; */
+}
+
+#inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #579DA1;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    margin-bottom: 18px;
+}
+
+#inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #579DA1;
+    text-transform: uppercase;
+}
+
+#inputBox input:valid~span,
+#inputBox input:focus~span {
+    color: #579DA1;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 4px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.marcador {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    gap: 18px;
+    /* border: red solid; */
+}
+
+
+/* Estilos do checkbox */
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+.checkbox input {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: relative;
+    flex-shrink: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.checkbox input:checked~.checkmark {
+    background-color: #ffffff;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #006A70;
+}
+
+.checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+.interacao {
+    display: flex;
+}
+
+.botao {
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    width: 100px;
+    height: 35px;
+    margin-left: 500px;
+    background-color: #fff;
+    color: #006A70;
+    border-radius: 8px;
+    cursor: pointer;
+    /* border: red 1px solid; */
+}
+
+.register {
+    margin-top: 10px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    /* border: red 1px solid; */
+}
+
+.register a:visited {
+    color: #C2DBDD;
+}
+
+footer {
+    height: 30px;
+}

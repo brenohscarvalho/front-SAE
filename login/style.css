@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.cabecalho-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box-sae {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 82px;
+}
+
+.logo {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.texto-servico {
+    color: #579DA1;
+    margin-bottom: 0;
+}
+
+.texto-registo {
+    margin-top: 48px;
+    color: #686770;
+    margin-bottom: 24px;
+}
+
+#inputBox {
+    position: relative;
+    width: 400px;
+}
+
+#inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #579DA1;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    margin-bottom: 24px;
+}
+
+#inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #579DA1;
+    text-transform: uppercase;
+}
+
+#inputBox input:valid~span,
+#inputBox input:focus~span {
+    color: #579DA1;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 4px;
+    background-color: white;
+}
+
+.register {
+    margin-top: 10px;
+    align-items: center;
+}
+
+.register a:visited {
+    color: #006A70;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    width: 400px;
+    height: 56px;
+    color: #fff;
+    background: #006A70;
+    border-radius: 8px;
+
+}
+
+.foo {
+    width: 10px;
+    height: 30px;
+}
